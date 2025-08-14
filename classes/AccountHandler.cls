@@ -2,7 +2,7 @@ public with sharing class AccountHandler {
     // Method to create an Account with the given name
     public static Account createAccount(String name) {
         if (String.isBlank(name)) {
-            throw new IllegalArgumentException('Account name cannot be blank');
+            throw new IllegalArgumentException('Account name cannot a be blank');
         }
         Account acc = new Account(Name = name);
         insert acc;
